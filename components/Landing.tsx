@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Hero from "./Hero";
 import Logo from "../assets/clocklogo.png";
+import AppleCard from "../assets/applecard.png";
+import Image from "next/image";
 
 function Landing() {
   return (
@@ -110,6 +112,31 @@ function Landing() {
             <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Buy</Link>
+            </div>
+          </div>
+          <div className="bg-promo w-full h-[580px] bg-center ">
+            <h1 className="text-white text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
+              A gift for every wish.
+            </h1>
+            <h2 className="text-xl max-w-xs pt-2 mx-auto text-center  text-white ">
+              Find something for everyone this Lunar New Year
+            </h2>
+
+            <div className="flex text-white text-lg pt-2  justify-center gap-10 items-center ">
+              <Link href="">Shop the gift guide</Link>
+            </div>
+          </div>
+          <div className="bg-card w-full h-[580px] bg-center ">
+            <div className="relative flex justify-center pt-12 text-center">
+              <Image src={AppleCard.src} alt="apple" width={100} height={200} />
+              {/* <img className="w-24 text-center" src={AppleCard.src} alt="" /> */}
+            </div>
+            <h2 className="text-xl max-w-xs pt-2 mx-auto text-center  text-m-black ">
+              Get up to 3% Daily Cash back with every purchase
+            </h2>
+            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+              <Link href="">Learn more</Link>
+              <Link href="/order">Apply now</Link>
             </div>
           </div>
         </div>

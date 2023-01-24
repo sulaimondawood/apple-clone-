@@ -15,6 +15,7 @@ module.exports = {
         "m-black": "#000000",
         "m-gray": "#6A6A6A",
         "ml-gray": "#EEEEF0",
+        "ml2-gray": "#99999D",
         "m-white": "#F5F5F7",
         "m-blue": "#1D6CB6",
       },
@@ -25,6 +26,9 @@ module.exports = {
         clock3: "url('../assets/clock.jpg')",
         iphone14: "url('../assets/iphone14.jpg')",
         ip: "url('../assets/ip.jpg')",
+        promo: "url('../assets/promo.jpg')",
+        card: "url('../assets/card.jpg')",
+        applecard: "url('../assets/applecard.jpg')",
       },
       width: {
         "d-width3": "3008px",

@@ -11,6 +11,10 @@
 }
 
 @layer components {
+  .nav-blur {
+    background-color: #ffffff10;
+  }
+
   .nav-link {
     @apply font-medium text-m-gray text-sm hover:text-ml-gray;
   }

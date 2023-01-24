@@ -8,7 +8,7 @@ import { BsBag } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="hidden justify-center space-x-9 py-4 lg:flex">
+    <div className="hidden nav-blur backdrop-blur-3xl fixed top-0 w-full  justify-center space-x-9 py-4 lg:flex">
       <Link href="/">
         <FaApple className="hover:text-ml-gray text-m-gray text-xl" />
       </Link>
