@@ -3,12 +3,14 @@ import React from "react";
 
 // react icons
 import { FaApple } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { BsBag } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="">
+    <div className="hidden justify-center space-x-9 py-4 lg:flex">
       <Link href="/">
-        <FaApple />
+        <FaApple className="hover:text-ml-gray text-m-gray text-xl" />
       </Link>
       <Link className="nav-link" href="/store">
         Store
@@ -40,6 +42,12 @@ const Header = () => {
       <Link className="nav-link" href="/store">
         Support
       </Link>
+      <button className="nav-link">
+        <CiSearch className="text-m-gray text-xl hover:text-ml-gray" />
+      </button>
+      <button>
+        <BsBag className="text-m-gray text-lg hover:text-ml-gray" />
+      </button>
     </div>
   );
 };

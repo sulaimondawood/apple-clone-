@@ -18,6 +18,22 @@ module.exports = {
         "m-white": "#F5F5F7",
         "m-blue": "#1D6CB6",
       },
+      backgroundImage: {
+        macmini3: "url('../assets/macmini3.jpg')",
+        homepod3: "url('../assets/homepod3.jpg')",
+        watch3: "url('../assets/watch.jpg')",
+        clock3: "url('../assets/clock.jpg')",
+        iphone14: "url('../assets/iphone14.jpg')",
+        ip: "url('../assets/ip.jpg')",
+      },
+      width: {
+        "d-width3": "3008px",
+        "d-width2": "1068px",
+        "d-width": "1068px",
+      },
+      height: {
+        "d-height3": "736px",
+      },
     },
   },
   plugins: [],
