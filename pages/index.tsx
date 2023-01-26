@@ -13,7 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <main className="">
         {/* <Header /> */}
-        <div className="container mx-auto">
+        {/* <div className="container mx-auto"> */}
+        <div className="">
           <Landing />
         </div>
       </main>

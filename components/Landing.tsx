@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import Logo from "../assets/clocklogo.png";
 import AppleCard from "../assets/applecard.png";
 import Image from "next/image";
+import Slider from "./Slider";
 
 function Landing() {
   return (
@@ -141,6 +142,7 @@ function Landing() {
           </div>
         </div>
       </div>
+      <Slider />
     </section>
   );
 }
