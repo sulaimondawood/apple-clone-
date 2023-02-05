@@ -11,22 +11,22 @@ function Landing() {
     <section>
       <Hero />
       <div className="flex flex-col items-center gap-4 ">
-        <div className="mbp">
-          <h1 className=" text-m-white text-5xl font-semibold pt-28 text-center">
+        <div className="mbp w-full h-[736px]">
+          <h1 className=" text-m-white text-3xl lg:text-5xl font-semibold pt-28 text-center">
             MacBook Pro
           </h1>
-          <h2 className="text-2xl leading-[50px] text-center text-m-white ">
+          <h2 className="text-lg   lg:text-2xl  leading-[50px] text-center text-m-white ">
             Supercharged by M2 Pro and M2 Max.
           </h2>
-          <p className="text-m-gray leading-10 text-center text-lg">
+          <p className="text-m-gray leading-10 text-center text-md lg:text-lg">
             Available starting 1.24
           </p>
-          <div className="flex text-blue-500 text-lg justify-center gap-10 items-center ">
+          <div className="flex text-blue-500 text-md lg:text-lg justify-center gap-10 items-center ">
             <Link href="">Learn more</Link>
             <Link href="/order">Order now</Link>
           </div>
         </div>
-        <div className="bg-macmini3 w-[100%] bg-center h-d-height3 ">
+        <div className="bg-macmini3  lg:w-[100%]  bg-center h-d-height3 ">
           <h1 className=" text-m-white text-5xl font-semibold pt-28 text-center">
             Mac mini
           </h1>
@@ -58,7 +58,7 @@ function Landing() {
         </div>
 
         {/* galller */}
-        <div className="grid w-full gap-4 grid-cols-2">
+        <div className="grid w-full gap-4 grid-cols-1 lg:grid-cols-2">
           <div className="bg-watch3 w-full h-[580px] bg-center ">
             <h1 className=" text-m-white text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
               Creativity and community.Woven together.

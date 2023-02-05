@@ -21,14 +21,12 @@
   .mbp {
     background-image: url("../assets/mbp3.jpg");
     /* width: 3008px; */
-    width: 100%;
-    height: 736px;
+
     /* 
     height: 698px;
     background-size: 1068px 698px; */
 
     background-position: center;
-
     background-repeat: no-repeat;
   }
 }
