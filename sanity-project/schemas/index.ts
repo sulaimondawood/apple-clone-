@@ -1,2 +1,3 @@
 import Categories from './categories'
-export const schemaTypes = [Categories]
+import Products from './products'
+export const schemaTypes = [Categories, Products]
