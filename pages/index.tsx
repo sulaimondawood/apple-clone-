@@ -1,7 +1,9 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
+// lib
+import sanityConfig from "../sanity-project/sanity.config";
 
 const Home: NextPage = () => {
   return (
@@ -23,3 +25,10 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await sanityConfig.fetch(`*[_type == "products"]`);
+  return {
+    props: data,
+  };
+};

@@ -8,5 +8,14 @@ export default {
       type: 'string',
       title: 'Name',
     },
+    {
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 90,
+      },
+    },
   ],
 }
