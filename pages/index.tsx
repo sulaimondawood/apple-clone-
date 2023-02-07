@@ -1,11 +1,22 @@
 import type { GetStaticProps, NextPage } from "next";
+import { createClient } from "next-sanity";
 import Head from "next/head";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 // lib
-import sanityConfig from "../sanity-project/sanity.config";
+// import client from "../sanity-project/sanity.config";
 
-const Home: NextPage = () => {
+export const client = createClient({
+  apiVersion: "2022-02-06",
+  projectId: "ksoks7ez",
+  dataset: "production",
+  token:
+    "skF4Ah1Y3nrsRlXEnyOhQ8N4g3xDbVyvc7VX7uVEYVJ3vMOKkc5v9Kpl8STj4d6cLyqr3qeWDY5XsqXFGdg03VaMNMtkGhFEf5rkURk3RerQtvzQHAWPdKpmoRHgM9PApB8LN62dsuZdVlOQ7hwuHAv6q2g86Kxla4eCu7yydoeuCnSCTqEX",
+  useCdn: false,
+});
+
+const Home: NextPage = (props: any) => {
+  console.log(props.result);
   return (
     <div>
       <Head>
@@ -27,7 +38,10 @@ const Home: NextPage = () => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await sanityConfig.fetch(`*[_type == "products"]`);
+  // const data = client;
+  const data = await client.fetch(`*[_type == "products"]`);
+  // const result = data;
+
   return {
     props: data,
   };
