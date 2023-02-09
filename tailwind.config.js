@@ -16,6 +16,7 @@ module.exports = {
         "m-gray": "#6A6A6A",
         "ml-gray": "#EEEEF0",
         "ml2-gray": "#99999D",
+        "ml3-gray": "#6E6E73",
         "m-white": "#F5F5F7",
         "m-blue": "#1D6CB6",
       },

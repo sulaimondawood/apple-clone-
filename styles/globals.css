@@ -6,7 +6,8 @@
 
 @layer base {
   body {
-    @apply bg-m-black font-body;
+    @apply bg-m-white font-body;
+    /* @apply bg-m-black font-body; */
   }
 }
 

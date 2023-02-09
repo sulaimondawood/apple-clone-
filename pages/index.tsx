@@ -6,7 +6,7 @@ import Landing from "../components/Landing";
 import { client } from "../lib/sanity";
 
 const Home: NextPage = (props: any) => {
-  console.log(props.data);
+  // console.log(props.data);
   return (
     <div>
       <Head>
