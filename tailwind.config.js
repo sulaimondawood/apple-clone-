@@ -22,7 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         macmini3: "url('../assets/macmini3.jpg')",
-        homepod3: "url('../assets/homepod3.jpg')",
+        homepod3: "url('../assets/homepodr.jpg')",
         watch3: "url('../assets/watch.jpg')",
         clock3: "url('../assets/clock.jpg')",
         iphone14: "url('../assets/iphone14.jpg')",
@@ -30,6 +30,7 @@ module.exports = {
         promo: "url('../assets/promo.jpg')",
         card: "url('../assets/card.jpg')",
         applecard: "url('../assets/applecard.jpg')",
+        pro: "url('../assets/mbpr.jpg')",
       },
       width: {
         "d-width3": "3008px",

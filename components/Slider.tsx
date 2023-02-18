@@ -29,10 +29,9 @@ const Slider = () => {
           <div className="relative w-3/4 object-center  object-contain h-[500px]">
             <Image
               fill
+              style={{ objectFit: "cover" }}
               src={Img.src}
               alt="img"
-              objectFit="cover"
-              // objectPosition="cen"
             />
           </div>
         </SwiperSlide>

@@ -13,21 +13,10 @@
 
 @layer components {
   .nav-blur {
-    background-color: #ffffff10;
+    background-color: #00000090;
   }
 
   .nav-link {
-    @apply font-medium text-m-gray text-sm hover:text-ml-gray;
-  }
-  .mbp {
-    background-image: url("../assets/mbp3.jpg");
-    /* width: 3008px; */
-
-    /* 
-    height: 698px;
-    background-size: 1068px 698px; */
-
-    background-position: center;
-    background-repeat: no-repeat;
+    @apply text-gray-300 text-xs hover:text-ml-gray;
   }
 }

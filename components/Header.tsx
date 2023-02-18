@@ -8,9 +8,9 @@ import { BsBag } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="hidden nav-blur backdrop-blur-3xl fixed top-0 w-full  justify-center space-x-9 py-4 lg:flex">
+    <div className="hidden nav-blur backdrop-blur-3xl  fixed top-0 w-full  justify-center space-x-9 py-3 lg:flex">
       <Link href="/">
-        <FaApple className="hover:text-ml-gray text-m-gray text-xl" />
+        <FaApple className="hover:text-ml-gray text-gray-300 text-xl" />
       </Link>
       <Link className="nav-link" href="/store">
         Store

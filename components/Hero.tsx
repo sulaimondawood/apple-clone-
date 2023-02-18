@@ -2,9 +2,9 @@ import React from "react";
 import { BsPlayCircle } from "react-icons/bs";
 const Hero = () => {
   return (
-    <section>
+    <section className="bg-m-black">
       <h1
-        className="text-3xl mt-24 lg:mt-16 w-96
+        className="text-3xl  pt-24 lg:pt-20 w-96
        lg:w-[768px] text-center mx-auto  text-m-white font-semibold lg:text-5xl"
       >
         Introducing the new MacBook Pro and Mac mini.
