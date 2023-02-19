@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-m-white pt-4 pb-8">
+    <div className="bg-m-white px-3 lg:px-0 pt-4 pb-8">
       <div className="max-w-4xl  mx-auto  text-left text-[13px] leading-loose text-ml2-gray">
         To access and use all the features of Apple Card, you must add Apple
         Card to your Wallet on iPhonne or iPad with the latest version of IOS or
@@ -12,7 +12,7 @@ const Footer = () => {
       </div>
 
       <hr className="max-w-4xl  mx-auto m-4" />
-      <div className="grid max-w-4xl  mx-auto grid-cols-4 justify-center ">
+      <div className="grid max-w-4xl  mx-auto grid-cols-3 lg:grid-cols-4 justify-center ">
         <div className="flex flex-col gap-3">
           <h1 className=" text-gray-600 text-sm font-semibold">
             Shop and Learn
@@ -53,37 +53,46 @@ const Footer = () => {
           <p className="text-ml2-gray text-xs">Order Status</p>
           <p className="text-ml2-gray text-xs">Shopping Help </p>
         </div>
-        <div className="flex flex-col gap-3">
-          <h1 className=" text-gray-600 text-sm font-semibold">For Business</h1>
-          <p className="text-ml2-gray text-xs">Apple and Business</p>
-          <p className="text-ml2-gray text-xs">Shop Business</p>
-
+        {/* <div className="flex flex-row flex-wrap lg:flex-col gap-3"> */}
+        <div className="grid w-screen lg:w-auto grid-cols-3 lg:grid-cols-1 gap-3">
+          <div className="flex gap-3 flex-col">
+            <h1 className=" text-gray-600 text-sm font-semibold">
+              For Business
+            </h1>
+            <p className="text-ml2-gray text-xs">Apple and Business</p>
+            <p className="text-ml2-gray text-xs">Shop Business</p>
+          </div>
           {/* //ttjghjthjthg */}
 
-          <h1 className="pt-4 text-gray-600 text-sm font-semibold">
-            For Education
-          </h1>
-          <p className="text-ml2-gray text-xs"> Apple and Education </p>
-          <p className="text-ml2-gray text-xs">Shop for K-12</p>
-          <p className="text-ml2-gray text-xs">Shop for College</p>
-
+          <div className="flex gap-3 flex-col">
+            <h1 className="pt-4 text-gray-600 text-sm font-semibold">
+              For Education
+            </h1>
+            <p className="text-ml2-gray text-xs"> Apple and Education </p>
+            <p className="text-ml2-gray text-xs">Shop for K-12</p>
+            <p className="text-ml2-gray text-xs">Shop for College</p>
+          </div>
           {/* //ttjghjthjthg */}
 
-          <h1 className="pt-4 text-gray-600 text-sm font-semibold">
-            For Healthcare
-          </h1>
-          <p className="text-ml2-gray text-xs"> Apple in Healthcare </p>
-          <p className="text-ml2-gray text-xs">Health on Apple Watch</p>
-          <p className="text-ml2-gray text-xs">Health Records on iPhone</p>
+          <div className="flex gap-3 flex-col">
+            <h1 className="pt-4 text-gray-600 text-sm font-semibold">
+              For Healthcare
+            </h1>
+            <p className="text-ml2-gray text-xs"> Apple in Healthcare </p>
+            <p className="text-ml2-gray text-xs">Health on Apple Watch</p>
+            <p className="text-ml2-gray text-xs">Health Records on iPhone</p>
+          </div>
           {/* //ttjghjthjthg */}
 
-          <h1 className="pt-4 text-gray-600 text-sm font-semibold">
-            For Government
-          </h1>
-          <p className="text-ml2-gray text-xs"> Shop for Government </p>
-          <p className="text-ml2-gray text-xs">
-            Shop for Veterans and Military
-          </p>
+          <div className="flex gap-3 flex-col">
+            <h1 className="pt-4 text-gray-600 text-sm font-semibold">
+              For Government
+            </h1>
+            <p className="text-ml2-gray text-xs"> Shop for Government </p>
+            <p className="text-ml2-gray text-xs">
+              Shop for Veterans and Military
+            </p>
+          </div>
         </div>
       </div>
     </div>

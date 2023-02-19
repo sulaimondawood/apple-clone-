@@ -41,7 +41,7 @@ function Landing() {
             <Link href="/order">Order now</Link>
           </div>
         </div>
-        <div className="bg-homepod3 w-full bg-center h-[500px] lg:h-d-height3 ">
+        <div className="bg-homepod3 w-full bg-center  h-[600px] lg:h-d-height3 ">
           <h1 className=" text-m-white text-5xl font-semibold pt-12 lg:pt-28 text-center">
             HomePod
           </h1>
@@ -59,67 +59,67 @@ function Landing() {
 
         {/* galller */}
         <div className="grid w-full gap-4 grid-cols-1 lg:grid-cols-2">
-          <div className="bg-watch3 w-full h-[580px] bg-center ">
-            <h1 className=" text-m-white text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
+          <div className="bg-watch3 w-full h-[500px] lg:h-[580px] bg-center ">
+            <h1 className=" text-m-white text-3xl lg:text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
               Creativity and community.Woven together.
             </h1>
-            <h2 className="text-xl max-w-sm mx-auto text-center  text-m-white ">
+            <h2 className="text-lg   lg:text-2xl   max-w-sm mx-auto text-center  text-m-white ">
               Explore the new Black Unity watch band and match face
             </h2>
 
-            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+            <div className="flex text-blue-500 text-md lg:text-lg  justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Buy</Link>
             </div>
           </div>
-          <div className="bg-clock3 w-full h-[580px] bg-center ">
+          <div className="bg-clock3 w-full h-[500px] lg:h-[580px] bg-center ">
             <img
               className="w-36 text-center mx-auto pt-12"
               src={Logo.src}
               alt=""
             />
-            <h2 className="text-xl max-w-sm mx-auto text-center  text-m-white ">
+            <h2 className="text-lg   lg:text-2xl   max-w-sm mx-auto text-center  text-m-white ">
               A healthy leap ahead.
             </h2>
 
-            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+            <div className="flex text-blue-500 text-md lg:text-lg justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Buy</Link>
             </div>
           </div>
-          <div className="bg-iphone14 w-full h-[580px] bg-center ">
-            <h1 className="text-m-white text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
+          <div className="bg-iphone14 w-full h-[500px] lg:h-[580px] bg-center ">
+            <h1 className="text-m-white text-3xl lg:text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
               iPhone 14 Pro
             </h1>
-            <h2 className="text-xl max-w-sm mx-auto text-center  text-m-white ">
+            <h2 className="text-lg   lg:text-2xl   max-w-sm mx-auto text-center  text-m-white ">
               Pro Beyond.
             </h2>
 
-            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+            <div className="flex text-blue-500 text-md lg:text-lg  justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Buy</Link>
             </div>
           </div>
-          <div className="bg-ip w-full h-[580px] bg-center ">
-            <h1 className="text-m-black text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
+          <div className="bg-ip w-full h-[500px] lg:h-[580px] bg-center ">
+            <h1 className="text-m-black text-3xl lg:text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
               iPhone 14
             </h1>
-            <h2 className="text-xl max-w-sm mx-auto text-center  text-m-black ">
+            <h2 className="text-lg   lg:text-2xl   max-w-sm mx-auto text-center  text-m-black ">
               Big and bigger.
             </h2>
             <p className="text-m-gray leading-10 text-center text-lg">
               Available starting 2.3
             </p>
-            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+            <div className="flex text-blue-500 text-md lg:text-lg  justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Buy</Link>
             </div>
           </div>
-          <div className="bg-promo w-full h-[580px] bg-center ">
-            <h1 className="text-white text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
+          <div className="bg-promo w-full h-[500px] lg:h-[580px] bg-center ">
+            <h1 className="text-white text-3xl lg:text-4xl font-semibold pt-12 text-center max-w-md mx-auto">
               A gift for every wish.
             </h1>
-            <h2 className="text-xl max-w-xs pt-2 mx-auto text-center  text-white ">
+            <h2 className="text-lg   lg:text-2xl   max-w-xs pt-2 mx-auto text-center  text-white ">
               Find something for everyone this Lunar New Year
             </h2>
 
@@ -127,15 +127,15 @@ function Landing() {
               <Link href="">Shop the gift guide</Link>
             </div>
           </div>
-          <div className="bg-card w-full h-[580px] bg-center ">
+          <div className="bg-card w-full h-[500px] lg:h-[580px] bg-center ">
             <div className="relative flex justify-center pt-12 text-center">
               <Image src={AppleCard.src} alt="apple" width={100} height={200} />
               {/* <img className="w-24 text-center" src={AppleCard.src} alt="" /> */}
             </div>
-            <h2 className="text-xl max-w-xs pt-2 mx-auto text-center  text-m-black ">
+            <h2 className="text-lg   lg:text-2xl   max-w-xs pt-2 mx-auto text-center  text-m-black ">
               Get up to 3% Daily Cash back with every purchase
             </h2>
-            <div className="flex text-blue-500 text-lg  justify-center gap-10 items-center ">
+            <div className="flex text-blue-500 text-md lg:text-lg  justify-center gap-10 items-center ">
               <Link href="">Learn more</Link>
               <Link href="/order">Apply now</Link>
             </div>

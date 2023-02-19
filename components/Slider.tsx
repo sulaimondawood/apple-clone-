@@ -1,32 +1,39 @@
 import React from "react";
 import Image from "next/image";
 
-import Img from "../assets/img.jpg";
-import Img2 from "../assets/img2.jpg";
-import Img3 from "../assets/img3.jpg";
-import Img4 from "../assets/img4.jpg";
-import Img5 from "../assets/img5.jpg";
+import Img from "../assets/slide.jpg";
+import Img2 from "../assets/slide2.jpg";
+import Img3 from "../assets/slide3.jpg";
+import Img4 from "../assets/slide4.jpg";
+import Img5 from "../assets/slide5.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Slider = () => {
   return (
-    <div className="bg-white  w-full mt-4">
+    <div className=" w-full mt-4">
       <Swiper
-        draggable={true}
-        autoplay={true}
-        spaceBetween={1}
-        slidesPerView={1.1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
+        className="w-screen"
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
       >
         <SwiperSlide>
-          <div className="relative w-3/4 object-center  object-contain h-[500px]">
+          <div className="relative w-[90%]  object-center h-[500px]">
             <Image
               fill
               style={{ objectFit: "cover" }}
@@ -36,18 +43,33 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-3/4 object-center  object-contain h-[500px]">
-            <Image fill src={Img2.src} alt="img" />
+          <div className="relative w-[90%] object-center  h-[500px]">
+            <Image
+              fill
+              src={Img2.src}
+              alt="img"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-3/4 object-center  object-contain h-[500px]">
-            <Image fill src={Img3.src} alt="img" />
+          <div className="relative w-[90%] object-center   h-[500px]">
+            <Image
+              fill
+              src={Img3.src}
+              alt="img"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-3/4 object-center  object-contain h-[500px]">
-            <Image fill src={Img4.src} alt="img" />
+          <div className="relative w-[90%] object-center   h-[500px]">
+            <Image
+              fill
+              src={Img4.src}
+              alt="img"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </SwiperSlide>
       </Swiper>
