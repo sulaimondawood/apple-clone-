@@ -7,18 +7,25 @@ import Doc from "../assets/doc.jpg";
 import Accessories from "../components/Accessories";
 import ExperienceCard from "../components/ExperienceCard";
 import EducationCard from "../components/EducationCard";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 const Store = () => {
   return (
     <div className="bg-m-white">
-      <div className="flex mt-36 justify-center items-center">
-        <h1 className="text-5xl max-w-4xl font-semibold">
+      <div className="flex mt-24 lg:mt-36 justify-center items-center">
+        <h1 className=" px-4 lg:px-0 text-2xl lg:text-5xl lg:max-w-4xl font-semibold">
           <span className="text-m-black">Store.</span>
           <span className="text-ml3-gray">
             The best way to buy the products you love.
           </span>
         </h1>
       </div>
-      <div
+      {/* <div
         className="
       relative  flex justify-end gap-8  pr-20  items-center  "
       >
@@ -50,24 +57,27 @@ const Store = () => {
           <img className="w-[150px]" src={Shoe.src} alt="" />
           <p className="text-sm text-m-black">Shoe</p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="flex flex-col mt-36 pl-96   justify-start">
-        <h1 className="text-ml-black text-3xl pb-5 font-semibold">
+      <div className=" px-4 lg:px-0 flex flex-col mt-36 lg:pl-96   justify-start">
+        <h1 className="text-ml-black text-xl lg:text-3xl pb-5 font-semibold">
           The latest.
           <span className="text-ml3-gray ">
             Take a look at what's new, right now
           </span>
         </h1>
-        <div className="flex gap-3 ">
-          <LatestCard />
-          <LatestCard />
-          <LatestCard />
-        </div>
+        {/* <div className="flex gap-3 "> */}
+        <Swiper spaceBetween={30}>
+          <SwiperSlide>
+            <LatestCard />
+          </SwiperSlide>
+        </Swiper>
+
+        {/* </div> */}
       </div>
 
       {/* Help center */}
-      <div className="flex flex-col mt-20 pl-96">
+      {/* <div className="flex flex-col mt-20 pl-96">
         <h1 className="text-ml-black text-3xl pb-5 font-semibold">
           Help is here.
           <span className="text-ml3-gray ">
@@ -100,10 +110,10 @@ const Store = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Accessories */}
-      <div className="flex flex-col mt-20 pl-96">
+      {/* <div className="flex flex-col mt-20 pl-96">
         <h1 className="text-ml-black text-3xl pb-5 font-semibold">
           Accessories.
           <span className="text-ml3-gray ">
@@ -116,10 +126,10 @@ const Store = () => {
           <Accessories />
           <Accessories />
         </div>
-      </div>
+      </div> */}
 
       {/* loud and clear  */}
-      <div className="flex flex-col mt-20 pl-96">
+      {/* <div className="flex flex-col mt-20 pl-96">
         <h1 className="text-ml-black text-3xl pb-5 font-semibold">
           Loud and clear.
           <span className="text-ml3-gray ">
@@ -132,10 +142,10 @@ const Store = () => {
           <Accessories />
           <Accessories />
         </div>
-      </div>
+      </div> */}
 
       {/* Experience */}
-      <div className="flex flex-col mt-20 pl-96">
+      {/* <div className="flex flex-col mt-20 pl-96">
         <h1 className="text-ml-black text-3xl pb-5 font-semibold">
           The Apple experience.
           <span className="text-ml3-gray ">
@@ -147,10 +157,10 @@ const Store = () => {
           <ExperienceCard />
           <ExperienceCard />
         </div>
-      </div>
+      </div> */}
 
       {/* Education */}
-      <div className="flex flex-col mt-20 pl-96">
+      {/* <div className="flex flex-col mt-20 pl-96">
         <h1 className="text-ml-black text-3xl pb-5 font-semibold">
           Special stores.
           <span className="text-ml3-gray ">
@@ -162,7 +172,7 @@ const Store = () => {
           <EducationCard />
           <EducationCard />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

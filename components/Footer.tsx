@@ -54,7 +54,7 @@ const Footer = () => {
           <p className="text-ml2-gray text-xs">Shopping Help </p>
         </div>
         {/* <div className="flex flex-row flex-wrap lg:flex-col gap-3"> */}
-        <div className="grid w-screen lg:w-auto grid-cols-3 lg:grid-cols-1 gap-3">
+        <div className="lg:grid w-screen lg:w-auto grid-cols-3 hidden  lg:grid-cols-1 gap-3">
           <div className="flex gap-3 flex-col">
             <h1 className=" text-gray-600 text-sm font-semibold">
               For Business

@@ -8,10 +8,10 @@ import Slider from "./Slider";
 
 function Landing() {
   return (
-    <section>
+    <section className="">
       <Hero />
       <div className="flex flex-col items-center gap-4 ">
-        <div className="bg-pro w-full bg-center h-[500px] lg:h-[736px]">
+        <div className="bg-pro  w-screen  lg:w-full bg-center h-[500px] lg:h-[736px]">
           <h1 className=" text-m-white text-3xl lg:text-5xl font-semibold pt-12 lg:pt-28 text-center">
             MacBook Pro
           </h1>
@@ -130,7 +130,6 @@ function Landing() {
           <div className="bg-card w-full h-[500px] lg:h-[580px] bg-center ">
             <div className="relative flex justify-center pt-12 text-center">
               <Image src={AppleCard.src} alt="apple" width={100} height={200} />
-              {/* <img className="w-24 text-center" src={AppleCard.src} alt="" /> */}
             </div>
             <h2 className="text-lg   lg:text-2xl   max-w-xs pt-2 mx-auto text-center  text-m-black ">
               Get up to 3% Daily Cash back with every purchase

@@ -10,7 +10,7 @@ import { BsBag } from "react-icons/bs";
 const Header = () => {
   return (
     <div className="">
-      <div className="hidden nav-blur backdrop-blur-3xl  fixed top-0 w-full  justify-center space-x-9 py-3 lg:flex">
+      <div className="hidden nav-blur backdrop-blur-3xl bg-red-500 fixed top-0 w-screen  justify-center space-x-9 py-3 lg:flex">
         <Link href="/">
           <FaApple className="hover:text-ml-gray text-gray-300 text-xl" />
         </Link>
@@ -53,7 +53,7 @@ const Header = () => {
       </div>
 
       {/* Mobile? */}
-      <div className="nav-blur backdrop-blur-3xl py-5 px-3 lg:hidden  fixed top-0 w-full flex justify-between items-center">
+      <div className="nav-blur backdrop-blur-3xl py-5 px-3 lg:hidden  fixed top-0 w-screen flex justify-between items-center">
         <Link href="/">
           <FaApple className="hover:text-ml-gray text-gray-300 text-xl" />
         </Link>

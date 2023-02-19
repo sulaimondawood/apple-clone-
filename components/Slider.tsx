@@ -18,12 +18,11 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Slider = () => {
   return (
-    <div className=" w-full mt-4">
+    <div className="    mt-4">
       <Swiper
-        className="w-screen"
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -33,7 +32,7 @@ const Slider = () => {
         modules={[Autoplay, Pagination, Navigation]}
       >
         <SwiperSlide>
-          <div className="relative w-[90%]  object-center h-[500px]">
+          <div className="relative w-full  lg:w-[90%]  object-center h-[500px]">
             <Image
               fill
               style={{ objectFit: "cover" }}
@@ -43,7 +42,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-[90%] object-center  h-[500px]">
+          <div className="relative w-full lg:w-[90%] object-center  h-[500px]">
             <Image
               fill
               src={Img2.src}
@@ -53,7 +52,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-[90%] object-center   h-[500px]">
+          <div className="relative w-full lg:w-[90%] object-center   h-[500px]">
             <Image
               fill
               src={Img3.src}
@@ -63,7 +62,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="relative w-[90%] object-center   h-[500px]">
+          <div className="relative w-full lg:w-[90%] object-center   h-[500px]">
             <Image
               fill
               src={Img4.src}
