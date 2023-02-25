@@ -9,7 +9,7 @@ import { BsBag } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <div className="z-[9999]">
+    <div className="z-[999999]">
       <div className="hidden nav-blur backdrop-blur-3xl  fixed top-0 w-screen  justify-center space-x-9 py-3 lg:flex">
         <Link href="/">
           <FaApple className="hover:text-ml-gray text-gray-300 text-xl" />

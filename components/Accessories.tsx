@@ -2,7 +2,7 @@ import React from "react";
 import Phone from "../assets/phone.jpg";
 const Accessories = () => {
   return (
-    <div className=" w-full lg:w-[400px] h-[350px] shadow-lg    rounded-xl px-6 pt-16 pb-6 flex flex-col justify-center items-center gap-4 bg-white">
+    <div className=" w-full lg:w-[400px] h-[350px] lg:h-[450px] shadow-lg    rounded-xl px-6 pt-16 pb-6 flex flex-col justify-center items-center gap-4 bg-white">
       <img
         className="h-[200px] w-[100px] object-cover"
         src={Phone.src}

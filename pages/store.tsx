@@ -27,10 +27,10 @@ const Store = () => {
       </div>
       <div
         className="
-      relative  flex justify-end gap-8 ml-96 lg:pr-20 px-4 lg-px-0 items-center  "
+      relative overflow-hidden  flex justify-end gap-8  lg:ml-96 lg:pr-20 px-4 lg-px-0 items-center  "
       >
         <Swiper
-          className="-z-[2000]"
+          // className="-z-[2000]"
           spaceBetween={40}
           grabCursor={true}
           breakpoints={{
@@ -102,7 +102,26 @@ const Store = () => {
           </span>
         </h1>
         <div className="flex justify-between overflow-hidden">
-          <Swiper spaceBetween={50}>
+          <Swiper
+            spaceBetween={50}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.05,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+              1300: {
+                slidesPerView: 3,
+                width: 1300,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <LatestCard />
+            </SwiperSlide>
             <SwiperSlide>
               <LatestCard />
             </SwiperSlide>
@@ -126,7 +145,24 @@ const Store = () => {
         </h1>
 
         <div className="flex gap-4 ">
-          <Swiper spaceBetween={10} slidesPerView={1.05} grabCursor={true}>
+          <Swiper
+            spaceBetween={10}
+            grabCursor={true}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.1,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+              1300: {
+                slidesPerView: 2,
+                width: 1300,
+              },
+            }}
+          >
             <SwiperSlide className="">
               <div className=" w-full lg:w-[480px] h-[370px] lg:h-auto shadow-lg  bg-white rounded-xl p-6">
                 <p className="text-m-black pb-3">APPLE SPECIALIST</p>
@@ -143,13 +179,13 @@ const Store = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className="flex flex-col gap-4">
+              <div className="flex  flex-col gap-4">
                 <div className="bg-white p-10 rounded-xl h-1/2 w-full lg:w-[450px]">
                   <h1 className="text-m-black font-semibold text-lg lg:text-xl w-full lg:w-[300px]">
                     Get to know your new device with a free Personal Session
                   </h1>
                 </div>
-                <div className="bg-gradient-to-br rounded-xl p-10 lg:py-4 flex items-center font-semibold from-blue-200  to-red-200 h-1/2">
+                <div className="bg-gradient-to-br rounded-xl lg:w-[450px] justify-self-stretch p-10 lg:py-4 flex items-center font-semibold from-blue-200  to-red-200 h-1/2">
                   <h1 className="text-m-black text-lg lg:text-xl w-[300px]">
                     Get expert service and support at the Genius Bar.
                   </h1>
@@ -169,7 +205,31 @@ const Store = () => {
           </span>
         </h1>
         <div className="flex gap-4">
-          <Swiper spaceBetween={20} slidesPerView={1.1}>
+          <Swiper
+            spaceBetween={20}
+            grabCursor={true}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.1,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+
+              1300: {
+                slidesPerView: 3,
+                width: 1300,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <Accessories />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Accessories />
+            </SwiperSlide>
             <SwiperSlide>
               <Accessories />
             </SwiperSlide>
@@ -189,7 +249,28 @@ const Store = () => {
           </span>
         </h1>
         <div className="flex gap-4">
-          <Swiper spaceBetween={20} slidesPerView={1.1}>
+          <Swiper
+            spaceBetween={20}
+            grabCursor={true}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.1,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+
+              1300: {
+                slidesPerView: 3,
+                width: 1300,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <Accessories />
+            </SwiperSlide>
             <SwiperSlide>
               <Accessories />
             </SwiperSlide>
@@ -212,7 +293,31 @@ const Store = () => {
           </span>
         </h1>
         <div className="flex gap-4">
-          <Swiper spaceBetween={20} slidesPerView={1.1}>
+          <Swiper
+            spaceBetween={20}
+            grabCursor={true}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.1,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+
+              1300: {
+                slidesPerView: 3,
+                width: 1300,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <ExperienceCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ExperienceCard />
+            </SwiperSlide>
             <SwiperSlide>
               <ExperienceCard />
             </SwiperSlide>
@@ -232,7 +337,31 @@ const Store = () => {
           </span>
         </h1>
         <div className="flex gap-4">
-          <Swiper spaceBetween={20} slidesPerView={1.09}>
+          <Swiper
+            spaceBetween={20}
+            grabCursor={true}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.1,
+                width: 300,
+              },
+              768: {
+                slidesPerView: 2,
+                width: 768,
+              },
+
+              1300: {
+                slidesPerView: 3,
+                width: 1300,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <EducationCard />
+            </SwiperSlide>
+            <SwiperSlide>
+              <EducationCard />
+            </SwiperSlide>
             <SwiperSlide>
               <EducationCard />
             </SwiperSlide>
