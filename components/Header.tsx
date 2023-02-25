@@ -17,10 +17,10 @@ const Header = () => {
         <Link className="nav-link" href="/store">
           Store
         </Link>
-        <Link className="nav-link" href="/store">
+        <Link className="nav-link" href="/mac">
           Mac
         </Link>
-        <Link className="nav-link" href="/store">
+        <Link className="nav-link" href="/ipad">
           ipad
         </Link>
         <Link className="nav-link" href="/store">
