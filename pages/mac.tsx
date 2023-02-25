@@ -60,7 +60,7 @@ const Mac = () => {
               className="hover:text-blue-700 justify-center items-center flex gap-2 flex-col"
             >
               <Image src={Icon6} alt="icon" />
-              <p className="text-xs">iMac 24"</p>
+              <p className="text-xs">iMac 24 &ldquo;</p>
             </Link>
           </SwiperSlide>
           <SwiperSlide>

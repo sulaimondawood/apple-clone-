@@ -98,7 +98,7 @@ const Store = () => {
         <h1 className="text-ml-black text-xl lg:text-3xl pb-5 font-semibold">
           The latest.
           <span className="text-ml3-gray ">
-            Take a look at what's new, right now
+            Take a look at what&apos;s new, right now
           </span>
         </h1>
         <div className="flex justify-between overflow-hidden">
