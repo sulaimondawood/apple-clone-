@@ -32,6 +32,8 @@ module.exports = {
         applecard: "url('../assets/applecard.jpg')",
         pro: "url('../assets/mbpr.jpg')",
         macpro: "url('../assets/macpro.jpg')",
+        bg: "url('../assets/bg.jpg')",
+        "bg-2": "url('../assets/bg2.jpg')",
       },
       width: {
         "d-width3": "3008px",

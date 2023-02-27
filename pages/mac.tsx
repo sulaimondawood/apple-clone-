@@ -19,6 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Laptop from "../components/Laptop";
 const Mac = () => {
   const [border, setBorder] = useState(true);
   const [border2, setBorder2] = useState(false);
@@ -32,8 +33,9 @@ const Mac = () => {
   };
   return (
     <div>
-      <div className="flex mt-20 px-4 lg:px-0 gap-10 justify-center items-center">
+      <div className="flex -z-500 mt-20 px-4 lg:px-0 gap-10 justify-center items-center">
         <Swiper
+          className="-z-50"
           breakpoints={{
             300: {
               slidesPerView: 3,
@@ -172,7 +174,7 @@ const Mac = () => {
       </div>
       {/* question */}
       <div className="mt-20">
-        <h1 className="text-3xl lg:text-5xl text-m-black text-center font-semibold">
+        <h1 className="text-3xl lg:text-5xl px-4 lg:px-0 text-m-black text-center font-semibold">
           Which Mac is right for you?
         </h1>
         <div className="flex justify-center mx-auto mt-14 w-fit   pb-3">
@@ -199,6 +201,45 @@ const Mac = () => {
           >
             Desktop
           </p>
+        </div>
+
+        <div className="grid grid-cols-2 px-4 lg:px-80 lg:grid-cols-4">
+          <Laptop />
+          <Laptop />
+          <Laptop />
+          <Laptop />
+        </div>
+      </div>
+
+      <div className="flex-col px-4  flex gap-6">
+        <div className="bg-bg px-4 mt-40  py-20  h-[450px] bg-no-repeat object-cover bg-top lg:bg-center w-full lg:w-[80rem] mx-auto ">
+          <div className="flex lg:pl-20 items-center gap-4 max-w-xl flex-col">
+            <h2 className="text-m-white lg:font-semibold  text-xl">
+              Behind the Mac
+            </h2>
+            <h2 className="text-m-white font-semibold text-3xl lg:text-5xl">
+              Hear the Force.
+            </h2>
+            <p className=" text-sm lg:text-lg max-w-sm text-center text-m-white">
+              Learn how the pros at Skywalker Sound push the limits of sonic
+              storytelling.
+            </p>
+          </div>
+        </div>
+        <div
+          className="bg-gradient-to-r from-gray-200  py-20 to-white mx-auto
+         w-full lg:w-[80rem] px-4  bg-no-repeat "
+        >
+          <div className="flex lg:pl-20 items-center gap-4 max-w-xl flex-col">
+            <h2 className="text-m-black font-semibold text-center text-3xl lg:text-5xl">
+              Get 3% Daily Cash back with Apple Card.
+            </h2>
+            <p className=" text-sm lg:text-lg max-w-sm text-center text-m-black">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+              cum omnis saepe vel, praesentium atque iste, doloremque eius
+              incidunt odit magnam dolorum minima. Similique, sint.
+            </p>
+          </div>
         </div>
       </div>
     </div>

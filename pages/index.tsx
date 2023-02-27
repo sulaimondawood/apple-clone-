@@ -27,11 +27,11 @@ const Home: NextPage = (props: any) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.fetch(`*[_type == "products"]`);
-  return {
-    props: {
-      data,
-    },
-  };
-};
+// export const getStaticProps: GetStaticProps = async () => {
+//   const data = await client.fetch(`*[_type == "products"]`);
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
