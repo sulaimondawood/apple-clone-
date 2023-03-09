@@ -34,6 +34,11 @@ module.exports = {
         macpro: "url('../assets/macpro.jpg')",
         bg: "url('../assets/bg.jpg')",
         "bg-2": "url('../assets/bg2.jpg')",
+        business: "url('../assets/business.jpg')",
+        education: "url('../assets/education.jpg')",
+
+        // ipad
+        ipadbg: "url('../assets/ipad/ipadpro.jpg')",
       },
       width: {
         "d-width3": "3008px",
